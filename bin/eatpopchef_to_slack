@@ -1,0 +1,2 @@
+#!/usr/bin/env ruby
+require File.join(__dir__, '..', 'src', 'eatpopchef_to_slack.rb')

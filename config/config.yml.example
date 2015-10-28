@@ -1,0 +1,22 @@
+slack:
+  webhook_url: 'https://hooks.slack.com/services/xxxxxxxxxxxx'
+  username: 'PopChef'
+  channel: '#food'
+  dishes:
+    username_suffix: 'Plats'
+    emoji: ':fork_and_knife:'
+  sides:
+    username_suffix: 'Desserts & Boissons'
+    emoji: ':cake:'
+eatpopchef:
+  schedules:
+    now: 'https://eatpopchef.com/api/schedules/now'
+    zone_id: '3'
+  enterprise:
+    price_override:
+      dishes: '8'
+      sides: ''
+services:
+  enabled:
+    - log
+    - slack
