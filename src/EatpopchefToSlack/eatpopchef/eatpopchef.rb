@@ -10,7 +10,7 @@ module EatpopchefToSlack
       def retrieve_menu(url)
         zone_id = Tools.config['eatpopchef']['schedules']['zone_id']
         zone_url = url + "?zoneId=#{zone_id}"
-        json_data = JSON.parse(open(url).read)
+        json_data = JSON.load(open(zone_url))
         split_data(json_data)
       end
 
