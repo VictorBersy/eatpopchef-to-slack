@@ -15,6 +15,5 @@ Then, when you decide the order are over, we send you how many dishes should be 
 - Install ruby
 - `bundle install` at the root of the repo
 - `cp config/config.yml.example config/config.yml`
-- `cp config/database.yml.example config/database.yml`
 - `crontab -e`
 - `30 11 * * * ruby /PATH/TO/THE/REPO/eatpopchef-to-slack/bin/eatpopchef_to_slack`
