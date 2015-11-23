@@ -25,7 +25,8 @@ module EatpopchefToSlack
             picture: data['picture'],
             price: real_price_for(data),
             quantity: data['quantity'],
-            quantityAvailable: data['quantityAvailable']
+            quantityAvailable: data['quantityAvailable'],
+            quantity_and_available: quantity_and_available(data)
           }
         end
 
@@ -35,6 +36,10 @@ module EatpopchefToSlack
           enterprise = Tools.config['eatpopchef']['enterprise']['price_override'][type.to_s].to_f
           prices = [popchef, enterprise]
           prices.delete_if {|p| p.zero? }.min
+        end
+
+        def quantity_and_available(data)
+          [data['quantityAvailable'], data['quantity']].join('/')
         end
       end
     end

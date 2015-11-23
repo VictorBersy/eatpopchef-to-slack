@@ -36,8 +36,7 @@ module EatpopchefToSlack
             fields: [
               { title: 'Description', value: @data[:description] },
               { title: 'Prix', value: "#{@data[:price]}€", short: true },
-              { title: 'Quantité', value: @data[:quantity], short: true },
-              { title: 'Restants', value: @data[:quantityAvailable],
+              { title: 'Quantité', value: @data[:quantity_and_available],
                 short: true },
             ],
             thumb_url: @data[:picture]
