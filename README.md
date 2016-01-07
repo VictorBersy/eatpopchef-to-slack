@@ -17,3 +17,14 @@ Then, when you decide the order are over, we send you how many dishes should be 
 - `cp config/config.yml.example config/config.yml`
 - `crontab -e`
 - `30 11 * * * ruby /PATH/TO/THE/REPO/eatpopchef-to-slack/bin/eatpopchef_to_slack`
+
+## Examples
+
+### Slack
+
+![Slack Example](https://raw.githubusercontent.com/VictorBersy/eatpopchef-to-slack/master/slack_menu_example.png)
+
+### CLI
+
+![CLI Example](https://raw.githubusercontent.com/VictorBersy/eatpopchef-to-slack/master/cli_menu_example.png)
+
